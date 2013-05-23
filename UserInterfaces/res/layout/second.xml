@@ -8,14 +8,19 @@
     <Button
         android:id="@+id/bLucesOn"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:text="Encender Luces"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:background="@drawable/bluebutton"
     />
+    
     <Button
         android:id="@+id/bLucesOff"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Apagar Luces"
     />
-
+    
 </LinearLayout>
