@@ -9,19 +9,15 @@ import android.widget.Button;
 
 public class MainActivity extends Activity
 {
-
 	private Button bLights,bDoors,bBlinds;
 	private OnClickListener ocl_Lights = new OnClickListener()
 	{
 		@Override
 		public void onClick(View v)
-		{ 
-			// Vamos a lanzar una nueva Activity
+		{
+			speak.speak("Luces", false);
 			Intent intent = new Intent(getApplicationContext(), LightsActivity.class);
 			startActivity(intent);
-			/*
-			finish(); // Si dejamos esta linea, al volver de la segunda activity
-			// regresamos a esta. Si quitamos la linea, esta activity "muere" al lanzar la segunda.*/
 		}
 	},
 	
@@ -30,6 +26,7 @@ public class MainActivity extends Activity
 		@Override
 		public void onClick(View v)
 		{
+			speak.speak("Puertas", false);
 			Intent intent = new Intent(getApplicationContext(), DoorsActivity.class);
 			startActivity(intent);
 		}
@@ -40,16 +37,20 @@ public class MainActivity extends Activity
 		@Override
 		public void onClick(View v)
 		{
+			speak.speak("Persianas", false);
 			Intent intent = new Intent(getApplicationContext(), BlindsActivity.class);
 			startActivity(intent);
 		}
 	};
+	
+	private Speak speak;
 	
 	@Override
 	protected void onCreate(Bundle bn)
 	{
 		super.onCreate(bn);
 		setContentView(R.layout.activity_main);
+		setTitle(R.string.myhome);
 		
 		bLights = (Button)findViewById(R.id.bMainLights);
 		bLights.setOnClickListener(ocl_Lights);
@@ -57,5 +58,7 @@ public class MainActivity extends Activity
 		bDoors.setOnClickListener(ocl_Doors);
 		bBlinds = (Button)findViewById(R.id.bMainBlinds);
 		bBlinds.setOnClickListener(ocl_Blinds);
+		
+		speak = Speak.getInstance(this);
 	}
 }

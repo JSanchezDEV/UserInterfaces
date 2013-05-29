@@ -71,6 +71,7 @@ public final class R {
         public static final int lights=0x7f050003;
         public static final int livingroom=0x7f05000c;
         public static final int menu_settings=0x7f050002;
+        public static final int myhome=0x7f050013;
         public static final int room=0x7f05000b;
         public static final int sinkfridge=0x7f05000f;
         public static final int title_activity_blinds=0x7f050009;
@@ -89,6 +90,12 @@ public final class R {
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
+
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    
+ API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
