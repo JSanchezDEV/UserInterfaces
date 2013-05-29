@@ -10,18 +10,38 @@ import android.widget.Button;
 public class MainActivity extends Activity
 {
 
-	private Button b;
-	private OnClickListener ocl = new OnClickListener()
+	private Button bLights,bDoors,bBlinds;
+	private OnClickListener ocl_Lights = new OnClickListener()
+	{
+		@Override
+		public void onClick(View v)
+		{ 
+			// Vamos a lanzar una nueva Activity
+			Intent intent = new Intent(getApplicationContext(), LightsActivity.class);
+			startActivity(intent);
+			/*
+			finish(); // Si dejamos esta linea, al volver de la segunda activity
+			// regresamos a esta. Si quitamos la linea, esta activity "muere" al lanzar la segunda.*/
+		}
+	},
+	
+	ocl_Doors = new OnClickListener()
 	{
 		@Override
 		public void onClick(View v)
 		{
-			// Vamos a lanzar una nueva Activity
-			Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+			Intent intent = new Intent(getApplicationContext(), DoorsActivity.class);
 			startActivity(intent);
-			
-			finish(); // Si dejamos esta linea, al volver de la segunda activity
-			// regresamos a esta. Si quitamos la linea, esta activity "muere" al lanzar la segunda.
+		}
+	},
+	
+	ocl_Blinds = new OnClickListener()
+	{
+		@Override
+		public void onClick(View v)
+		{
+			Intent intent = new Intent(getApplicationContext(), BlindsActivity.class);
+			startActivity(intent);
 		}
 	};
 	
@@ -31,9 +51,11 @@ public class MainActivity extends Activity
 		super.onCreate(bn);
 		setContentView(R.layout.activity_main);
 		
-		b = (Button)findViewById(R.id.bMain);
-		b.setOnClickListener(ocl);
-		
+		bLights = (Button)findViewById(R.id.bMainLights);
+		bLights.setOnClickListener(ocl_Lights);
+		bDoors = (Button)findViewById(R.id.bMainDoors);
+		bDoors.setOnClickListener(ocl_Doors);
+		bBlinds = (Button)findViewById(R.id.bMainBlinds);
+		bBlinds.setOnClickListener(ocl_Blinds);
 	}
-
 }

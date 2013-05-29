@@ -5,11 +5,29 @@
  >
 
     <Button
-        android:id="@+id/bMain"
+        android:id="@+id/bMainDoors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/hello_world" />
+        android:text="@string/doors" />
+
+    <Button
+        android:id="@+id/bMainLights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:text="@string/lights" />
+
+    <Button
+        android:id="@+id/bMainBlinds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="@string/blinds" />
 
 </RelativeLayout>

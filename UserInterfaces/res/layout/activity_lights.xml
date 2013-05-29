@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".LightsActivity" >
+    
+   	<Switch
+        android:id="@+id/sLightsAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all" />
+
+    <Switch
+        android:id="@+id/sLightsRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/room" />
+
+    <Switch
+        android:id="@+id/sLightsLivingRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/livingroom" />
+
+    <Switch
+        android:id="@+id/sLightsTVRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvroom" />
+    
+    <Switch
+        android:id="@+id/sLightsKitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kitchen" />
+
+    <Switch
+        android:id="@+id/sLightsSinkFridge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sinkfridge" />
+
+    <Switch
+        android:id="@+id/sLightsKitchenOvenCooktop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kitchenovencooktop" />
+
+    <Switch
+        android:id="@+id/sLightsToilet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toilet" />
+
+</LinearLayout>

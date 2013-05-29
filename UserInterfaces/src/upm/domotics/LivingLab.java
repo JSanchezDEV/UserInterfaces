@@ -34,7 +34,7 @@ public class LivingLab
 		lightsSinkFridge = "LUZ_COCINA_FRIGO_FREGADERO_ONOFF",
 		lightsKitchenOvenCooktop = "LUZ_COCINA_HORNO_VITRO_ONOFF",
 		lightsToilet = "LUZ_ASEO_ONOFF",
-		
+		/*
 		// Individual lights
 		lightsHall = "LUZ_ENTRADA_ONOFF",
 		lightsHallRoom = "LUZ_HABITACION_ENTRADA_ONOFF",
@@ -54,18 +54,18 @@ public class LivingLab
 		ligthsPorch = "LUZ_PORCHE_ONOFF",
 		lightsSCExt = "LUZ_SCEXT_ONOFF",
 		lightsOutside = "LUZ_CALLE_ONOFF",
-		
+		*/
 		// Group of blinds
 		blindKitchen = "PERSIANA_COCINA",
 		blindLivingRoom = "PERSIANA_SALON",
 		
 		// Individual blinds
-		blindRoom = "PERSIANA_HABITACION",
+		blindRoom = "PERSIANA_HABITACION"/*,
 		blindRoomLivingRoom = "PERSIANA_SALON_ENTRADA",
 		blindAutomaticLivingRoom = "PERSIANA_SALON_AUTOMATIZADA",
 		blindKitchenLivingRoom = "PERSIANA_COCINA_SALON",
-		blindAutomaticKitchen = "PERSIANA_COCINA_AUTOMATIZADA";
-		
+		blindAutomaticKitchen = "PERSIANA_COCINA_AUTOMATIZADA"*/;
+
 		
 	public static void openFrontDoor() { sendOrder(LivingLab.frontDoor, OPEN); }
 	public static void closeFrontDoor() { sendOrder(LivingLab.frontDoor, CLOSE); }	
@@ -93,7 +93,7 @@ public class LivingLab
 	
 	public static void toiletLightsOn() { sendOrder(LivingLab.lightsToilet, ON); }
 	public static void toiletLightsOff() { sendOrder(LivingLab.lightsToilet, OFF); }
-	
+	/*
 	public static void hallLightsOn() { sendOrder(LivingLab.lightsHall, ON); }
 	public static void hallLightsOff() { sendOrder(LivingLab.lightsHall, OFF); }
 	
@@ -147,7 +147,7 @@ public class LivingLab
 
 	public static void outsideLightsOn() { sendOrder(LivingLab.lightsOutside, ON); }
 	public static void outsideLightsOff() { sendOrder(LivingLab.lightsOutside, OFF); }
-	
+	*/
 	public static void kitchenBlindRaise() { sendOrder(LivingLab.blindKitchen, RAISE); }
 	public static void kitchenBlindLower() { sendOrder(LivingLab.blindKitchen, LOWER); }
 	
@@ -156,7 +156,7 @@ public class LivingLab
 	
 	public static void RoomBlindRaise() { sendOrder(LivingLab.blindRoom, RAISE); }
 	public static void RoomBlindLower() { sendOrder(LivingLab.blindRoom, LOWER); }
-	
+	/*
 	public static void roomLivingRoomBlindRaise() { sendOrder(LivingLab.blindRoomLivingRoom, RAISE); }
 	public static void roomLivingRoomBlindLower() { sendOrder(LivingLab.blindRoomLivingRoom, LOWER); }
 	
@@ -168,7 +168,7 @@ public class LivingLab
 	
 	public static void automaticKitchenBlindRaise() { sendOrder(LivingLab.blindAutomaticKitchen, RAISE); }
 	public static void automaticKitchenBlindLower() { sendOrder(LivingLab.blindAutomaticKitchen, LOWER); }
-	
+	*/
 	
 	public static void raiseAllBlinds()
 	{

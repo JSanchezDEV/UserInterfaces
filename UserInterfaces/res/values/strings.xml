@@ -4,5 +4,21 @@
     <string name="app_name">UserInterfaces</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-
+    <string name="lights">Luces</string>
+    <string name="doors">Puertas</string>
+    <string name="blinds">Persianas</string>
+    <string name="title_activity_lights">LightsActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_doors">DoorsActivity</string>
+    <string name="title_activity_blinds">BlindsActivity</string>
+    <string name="all">Todas</string>
+    <string name="room">Habitación</string>
+    <string name="livingroom">Salón</string>
+    <string name="tvroom">Sala de TV</string>
+    <string name="kitchen">Cocina</string>
+    <string name="sinkfridge">Frigorífico</string>
+    <string name="kitchenovencooktop">Horno</string>
+    <string name="toilet">Baño</string>
+    <string name="frontdoor">Puerta principal</string>
+    
 </resources>
