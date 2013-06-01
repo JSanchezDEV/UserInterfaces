@@ -21,5 +21,6 @@
     <string name="toilet">Baño</string>
     <string name="frontdoor">Puerta principal</string>
     <string name="myhome">Mi Casa</string>
-    
+    <string name="title_activity_splash">SplashActivity</string>
+
 </resources>

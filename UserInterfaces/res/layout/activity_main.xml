@@ -2,32 +2,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main"
  >
 
     <Button
-        android:id="@+id/bMainDoors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/doors" />
-
-    <Button
         android:id="@+id/bMainLights"
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
+        android:layout_alignBaseline="@+id/bMainBlinds"
+        android:layout_alignBottom="@+id/bMainBlinds"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="13dp"
+        android:background="#FFFF00"
         android:text="@string/lights" />
 
     <Button
+        android:id="@+id/bMainDoors"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bMainLights"
+        android:layout_centerHorizontal="true"
+        android:background="#FFFF00"
+        android:text="@string/doors" />
+
+    <Button
         android:id="@+id/bMainBlinds"
-        android:layout_width="wrap_content"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="74dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="13dp"
+        android:background="#FFFF00"
         android:text="@string/blinds" />
 
 </RelativeLayout>
